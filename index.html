@@ -309,6 +309,43 @@
     
     <script src="./script.js"> </script>
     <script src="./scrollreveal.min.js"></script>
+    <script>
+        document.getElementById("form").addEventListener("submit", async function (e) {
+            e.preventDefault(); // prevent form from reloading the page
+    
+            // get values
+            const name = document.getElementById("name-form").value;
+            const email = document.getElementById("email-form").value;
+            const phone = document.getElementById("phone-form").value;
+    
+            try {
+                const response = await fetch("http://localhost:5000/submit", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        phone: phone
+                    })
+                });
+    
+                const data = await response.json();
+    
+                if (response.ok) {
+                    alert(data.message || "Submitted successfully!");
+                    document.getElementById("form").reset(); // optional
+                } else {
+                    alert("Something went wrong: " + data.error);
+                }
+            } catch (error) {
+                alert("Error connecting to server.");
+                console.error(error);
+            }
+        });
+    </script>
+    
     
 </body>
 </html>
