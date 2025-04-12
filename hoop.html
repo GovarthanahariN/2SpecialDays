@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Special Days</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-[#131416] text-white overflow-x-hidden">
+
+  <!-- HEADER -->
+  <header class="w-full fixed top-0 z-50 h-16 md:h-20 bg-[#131416] shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-full">
+      <div class="flex items-center space-x-3">
+        <img src="../Special_Days2/assets/icon3-removebg-preview.png" class="w-10 h-10" alt="Icon" />
+        <h1 class="text-xl md:text-2xl font-bold">Special Days</h1>
+      </div>
+
+      <div class="hidden lg:flex items-center space-x-10">
+        <nav>
+          <ul class="flex space-x-6 text-sm md:text-base">
+            <li><a href="index.html#home" class="hover:text-[#a3db76]">Home</a></li>
+            <li><a href="index.html#products" class="hover:text-[#a3db76]">Products</a></li>
+            <li><a href="index.html#gallery" class="hover:text-[#a3db76]">View Gallery</a></li>
+            <li><a href="index.html#featured" class="hover:text-[#a3db76]">Featured</a></li>
+            <li><a href="index.html#contact" class="hover:text-[#a3db76]">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- <div class="space-x-4 text-xl">
+          <i class="ri-shopping-cart-line cursor-pointer"></i>
+          <i class="ri-user-line cursor-pointer"></i>
+        </div> -->
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <div class="lg:hidden flex items-center space-x-4 text-xl cursor-pointer">
+        <i class="ri-shopping-cart-line"></i>
+        <i class="ri-user-line"></i>
+        <i class="ri-menu-line" id="ham"></i>
+        <i class="ri-close-line hidden" id="cross"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <section id="content" class="lg:hidden fixed top-16 left-0 w-full h-screen bg-[#131416] hidden z-40">
+    <ul class="flex flex-col items-center gap-6 text-lg mt-10">
+      <li><a href="index.htmlindex.html#home">Home</a></li>
+      <li><a href="index.html#products">Products</a></li>
+      <li><a href="index.html#order">Order Now</a></li>
+      <li><a href="index.html#gallery">View Gallery</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery" class="pt-28 md:pt-40 px-4">
+    <div class="text-center mb-12 ml-2 mt-10">
+      <h2 class="text-3xl md:text-5xl font-bold italic">Hoop Art 🪡</h2>
+    </div>
+    <div class="max-w-7xl mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-3 px-4">
+      <div class="w-full aspect-square bg-gradient-to-b from-[#496b2e] to-[#141613] p-4 border-2 border-[#a3db76] rounded-2xl overflow-hidden">
+        <img src="./assets/hoop/img1.png" alt="Portrait" class="w-full h-full object-cover rounded-2xl" />
+      </div>
+      <div class="w-full aspect-square bg-gradient-to-b from-[#496b2e] to-[#141613] p-4 border-2 border-[#a3db76] rounded-2xl overflow-hidden">
+        <img src="./assets/hoop/img2.png" alt="Portrait" class="w-full h-full object-cover rounded-2xl" />
+      </div>
+      <div class="w-full aspect-square bg-gradient-to-b from-[#496b2e] to-[#141613] p-4 border-2 border-[#a3db76] rounded-2xl overflow-hidden">
+        <img src="./assets/hoop/img3.jpg" alt="Portrait" class="w-full h-full object-cover rounded-2xl" />
+      </div>
+      <div class="w-full aspect-square bg-gradient-to-b from-[#496b2e] to-[#141613] p-4 border-2 border-[#a3db76] rounded-2xl overflow-hidden">
+        <img src="./assets/hoop/img4.png" alt="Portrait" class="w-full h-full object-cover rounded-2xl" />
+      </div>
+      <div class="w-full aspect-square bg-gradient-to-b from-[#496b2e] to-[#141613] p-4 border-2 border-[#a3db76] rounded-2xl overflow-hidden">
+        <img src="./assets/hoop/img5.png" alt="Portrait" class="w-full h-full object-cover rounded-2xl" />
+      </div>
+      <div class="w-full aspect-square bg-gradient-to-b from-[#496b2e] to-[#141613] p-4 border-2 border-[#a3db76] rounded-2xl overflow-hidden">
+        <img src="./assets/hoop/img6.png" alt="Portrait" class="w-full h-full object-cover rounded-2xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="mt-20 px-4">
+    <div class="max-w-7xl mx-auto grid gap-10 lg:grid-cols-2">
+      <div>
+        <div class="flex items-center space-x-3 mb-2">
+          <img src="../Special_Days2/assets/icon3-removebg-preview.png" class="w-10 h-10" alt="Icon" />
+          <p class="text-xl font-bold">Special Days</p>
+        </div>
+        <p class="text-gray-400 text-sm">Explore a world of creativity with us.</p>
+      </div>
+
+      <div class="flex flex-col space-y-5 md:flex-row md:space-y-0 md:justify-between">
+        <div>
+          <h3 class="text-lg font-semibold italic mb-2">Find us here</h3>
+          <p class="text-gray-400 text-sm">Kumarapalayam, Namakkal<br />Tamil Nadu, India</p>
+        </div>
+        <a href="https://www.instagram.com/special___days/" target="_blank" class="flex items-center space-x-3 bg-white text-black px-4 py-2 rounded-full hover:shadow-lg transition">
+          <i class="ri-arrow-right-line bg-[#83c94a] text-white px-2 py-1 rounded-full hover:rotate-45 transition-transform duration-300"></i>
+          <span class="font-semibold flex items-center">
+            To Explore Us
+            <img src="../Special_Days2/assets/insta-logo-removebg-preview.png" class="w-10 h-auto ml-2" />
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="text-center mt-10 text-gray-500 text-sm">
+      Developed with ❤️ by Govarthanahari Navaneethakrishnan
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./script.js"></script>
+  <script src="./scrollreveal.min.js"></script>
+</body>
+</html>
