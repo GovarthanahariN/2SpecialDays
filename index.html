@@ -1,15 +1,13 @@
 <!-- 
- .
- .
-Description : 
+=====================================================
+ Project       : Special Days
+ Description   : Index page (Website showcasing personalized art pieces)
 
-Author :
-Version : 
-Date : 
-.
-.
+ Author        : Govarthanahari N
+ Version       : 1.0
+ Date          : 27/02/24
+=====================================================
 -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +23,7 @@ Date :
 </head>
 
 <body class="bg-[#131416]">
+     <!--HEADER-->
     <header class="w-[100vw] fixed top-0 z-50  h-[60px] md:h-[75px]" id="header" >
         <div class="2xl:container">
             <div class="w-[90%] mx-auto h-[60px] grid grid-cols-1 lg:grid-cols-2">
@@ -42,7 +41,7 @@ Date :
                     </div>
                 </div>
 
-
+                <!--Desktop Navigation-->
                  <div class="lg:block hidden py-7">
                     <nav class=" flex justify-end items-center lg:items-center lg:justify-between gap-6">
                         <div class="hidden lg:block">
@@ -75,7 +74,7 @@ Date :
         </div>
     </header>
 
-
+    <!--Mobile Menu-->
     <section class="lg:hidden fixed right-0 top-12 w-full h-screen hidden blur-content z-50" id="content">
         <nav class="flex justify-start items-center">
             <div class="flex items-start justify-center w-full">
@@ -90,8 +89,7 @@ Date :
         </nav>
     </section>
 
-
-
+    <!--Home Section-->
     <section class="home" id="home">
         <div class="2xl:container ">
             <div class="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2">
@@ -117,6 +115,7 @@ Date :
         </div>
     </section>
 
+    <!--Product Section-->
     <section class="mt-10 lg:mt-0 " id="products">
         <div class="2xl:container">
             <div class="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2">
@@ -147,7 +146,7 @@ Date :
         </div>
     </section>
 
-
+    <!--Gallery Section-->
     <section class="mt-20 md:mt-40 lg:10" id="gallery">
         <div class="2xl:container">
             <div class="w-[80%] mx-auto flex justify-center">
@@ -212,6 +211,7 @@ Date :
         </div>
     </section>
 
+    <!--Featured Section-->
     <section class="mt-20 md:mt-40 lg:10" id="featured">
         <div class="2xl:container">
             <div class="w-[80%] mx-auto flex justify-center">
@@ -231,7 +231,7 @@ Date :
         </div>
     </section>
 
-
+    <!--Contact Section-->
     <section class="mt-10 md:mt-40 lg:mt-10 " id="contact">
         <div class="2xl:container">
             <div class="w-[80%] mx-auto flex justify-center">
@@ -264,11 +264,6 @@ Date :
             </div>
         </div>
     </section>
-<!-- 
-    <section class="mt-10 md:mt-40 lg:mt-10">
-       
-    </section> -->
-
 
     <footer class="mt-10 md:mt-40">
         <div class="2xl:container">
@@ -308,9 +303,11 @@ Date :
         </div>
     </footer>
 
-    
+    <!--Scripts Section-->
     <script src="./script.js"> </script>
     <script src="./scrollreveal.min.js"></script>
+
+    <!--Form Hnalding-->
     <script>
         document.getElementById("form").addEventListener("submit", async function (e) {
             e.preventDefault(); // prevent form from reloading the page

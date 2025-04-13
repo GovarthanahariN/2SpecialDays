@@ -1,8 +1,12 @@
 /*
-Description : Handles mobile menu toggle and validates the form
+=====================================================
+ Project       : Special Days
+ Description   : Handles mobile menu toggle and validates the form
 
-Author : Govarthanahari N
-Date : 10/03/24
+ Author        : Govarthanahari N
+ Version       : 1.0
+ Date          : 10/03/24
+=====================================================
 */
 
 //Navigation Elements

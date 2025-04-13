@@ -1,15 +1,20 @@
-/* 
-Description : Global stylesheet for the SPECIALDAY website.
-              This file includes:
-              -Base styles (reset, font, box-model)
-              -Smooth scrolling
-              -Scrollbar customization
-              -Blurred UI backgrounds
-              -CSS animations from Animista (fade, focus, slide)
+/*
+=====================================================
+ Project       : Special Days
+ Description   : Global stylesheet for the SPECIALDAY website.
+                 This file includes:
+                  -Base styles (reset, font, box-model)
+                  -Smooth scrolling
+                  -Scrollbar customization
+                  -Blurred UI backgrounds
+                  -CSS animations from Animista (fade, focus, slide)
 
-Author : Govarthanahari N
-Date : 05/03/24
- */
+ Author        : Govarthanahari N
+ Version       : 1.0
+ Date          : 05/03/24
+=====================================================
+*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
